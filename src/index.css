@@ -114,7 +114,7 @@ nav {
 
 #hero_section {
   /* / background-color: aquamarine; / */
-  background-image: url("images/Home.jpg");
+  background-image: url("./images/Home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
