@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+}
+
+#navbar {
+  /* / background-color: red; / */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: rgba(245, 245, 245, 0.804);
+  height: 100px;
+  width: 85%;
+
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+
+  & #nav_img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100px;
+
+    & img {
+
+      height: 140%;
+      width: 120%;
+    }
+  }
+
+  & #nav_links {
+    height: 100%;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      gap: 20px;
+      font-size: 1.1rem;
+      font-weight: 600;
+
+      & li {
+        /* / background-color: pink; / */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+    }
+  }
+}
+
+.hover_style {
+  background-color: rgb(254, 255, 254);
+  position: absolute;
+  left: 0;
+  top: 80px;
+  z-index: 2;
+  height: fit-content !important;
+  width: 10rem !important;
+  display: none !important;
+  padding: 1rem 2rem;
+
+  & li {
+    list-style: none;
+    padding: 1rem 0;
+    font-size: .9rem;
+    font-weight: 600;
+    color: black;
+  }
+}
+
+.li_hover {
+  position: relative;
+  /* / background-color: red; / */
+
+}
+
+.li_hover:hover .hover_style {
+  display: block !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#hero_section {
+  /* / background-color: aquamarine; / */
+  background-image: url("images/Home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & #hero {
+    position: absolute;
+    /* / color: rgb(252, 252, 252); / */
+    color: #f3f4f1;
+    /* / background-color: rgba(240, 248, 255, 0.45); / */
+    text-transform: capitalize;
+
+    & h1 {
+      font-family: "Winky Rough", sans-serif;
+      text-shadow: 0 1px 0 rgb(0, 0, 0);
+      font-size: 4rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    & p {
+      font-size: 1.5rem;
+      text-align: center;
+      /* / font-weight: 500; / */
+      /* / width: fit-content; / */
+      font-weight: 500;
+    }
+  }
+}
+
+/* / / Cursor / / */
+.cursor {
+  position: relative;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  font-size: 30px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  /* / transform: translateY(-50%);     / */
+}
+
+/* / / Animation / / */
+.typewriter-animation {
+  animation:
+    typewriter 5s steps(50) 1s 1 normal both,
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkingCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.features {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #5a3921;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  height: 300px;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+}
+
+.feature-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #5a3921;
+  margin-bottom: 1rem;
+}
