@@ -381,7 +381,11 @@ nav {
     display: none;
   }
 
-  #ham {
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+}
+
+#ham {
     display: inline-block;
   }
 
