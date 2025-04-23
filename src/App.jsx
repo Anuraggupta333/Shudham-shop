@@ -6,8 +6,17 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 import { Sling as Hamburger } from "hamburger-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <>
       <nav>
@@ -22,8 +31,8 @@ function App() {
               <li className="li_hover">
                 Category
                 <ul className="hover_style">
-                  <li>Gift hampers</li>
-                  <li>Dry Fruits</li>
+                <li> <a href="#gift-products"> Gift hampers</a></li>
+                  <li><a href="#products">Dry Fruits</a></li>
                 </ul>
               </li>
               <li>Products</li>
@@ -42,7 +51,7 @@ function App() {
           <h1 class="cursor typewriter-animation">
             Enrich with goodness and purity
           </h1>
-          <p>- Tanish Enterprise</p>
+          <p>- Tanish Enterprises</p>
         </div>
       </section>
 
@@ -128,83 +137,83 @@ function App() {
       </section>
 
       {/* Gift items */}
-      <section id="products" class="products">
+      <section id="gift_products" class="products">
         <h2>Our Gift Items</h2>
         <div class="product-grid">
-          <div class="product-card">
-            <img src="./images/gift.jpg" alt="Dried Mango" />
-            <div class="product-info">
-              <h3>Dried Mango</h3>
-              <p>Sweet, tropical mango slices dried to perfection.</p>
-              <div class="price">$9.99</div>
-              {/* <button class="add-to-cart">Add to Cart</button> */}
+            <div data-aos="flip-left" data-aos-delay="0" class="product-card">
+                <img src="images/giftimage.jpg" alt="Dried Mango"/>
+                <div  class="product-info">
+                    <h3>Dried Mango</h3>
+                    <p>Sweet, tropical mango slices dried to perfection.</p>
+                    <div class="price">$9.99</div>
+                    
+                </div>
             </div>
-          </div>
-          <div class="product-card">
-            <img src="./images/gift.jpg" alt="Dried Mango" />
-            <div class="product-info">
-              <h3>Dried Mango</h3>
-              <p>Sweet, tropical mango slices dried to perfection.</p>
-              <div class="price">$9.99</div>
-              {/* <button class="add-to-cart">Add to Cart</button> */}
+            <div data-aos="flip-left" data-aos-delay="100" class="product-card">
+                <img src="images/giftimage.jpg" alt="Dried Cranberries"/>
+                <div class="product-info">
+                    <h3>Dried Cranberries</h3>
+                    <p>Tangy and sweet cranberries, perfect for snacking.</p>
+                    <div class="price">$7.99</div>
+                    
+                </div>
             </div>
-          </div>
-          <div class="product-card">
-            <img src="./images/gift.jpg" alt="Dried Mango" />
-            <div class="product-info">
-              <h3>Dried Mango</h3>
-              <p>Sweet, tropical mango slices dried to perfection.</p>
-              <div class="price">$9.99</div>
-              {/* <button class="add-to-cart">Add to Cart</button> */}
+            <div data-aos="flip-left" data-aos-delay="200" class="product-card">
+                <img src="images/giftimage.jpg" alt="Dried Apricots"/>
+                <div class="product-info">
+                    <h3>Dried Apricots</h3>
+                    <p>Soft and chewy apricots with rich flavor.</p>
+                    <div class="price">$8.99</div>
+                    
+                </div>
             </div>
-          </div>
-          <div class="product-card">
-            <img src="./images/gift.jpg" alt="Dried Mango" />
-            <div class="product-info">
-              <h3>Dried Mango</h3>
-              <p>Sweet, tropical mango slices dried to perfection.</p>
-              <div class="price">$9.99</div>
-              {/* <button class="add-to-cart">Add to Cart</button> */}
+            <div data-aos="flip-left" data-aos-delay="300" class="product-card">
+                <img src="images/giftimage.jpg" alt="Mixed Berries"/>
+                <div class="product-info">
+                    <h3>Mixed Berries</h3>
+                    <p>A delicious blend of strawberries, blueberries, and cherries.</p>
+                    <div class="price">$10.99</div>
+                    
+                </div>
             </div>
-          </div>
-          <div class="product-card">
-            <img src="./images/gift.jpg" alt="Dried Mango" />
-            <div class="product-info">
-              <h3>Dried Mango</h3>
-              <p>Sweet, tropical mango slices dried to perfection.</p>
-              <div class="price">$9.99</div>
-              {/* <button class="add-to-cart">Add to Cart</button> */}
+            <div data-aos="flip-left" data-aos-delay="400" class="product-card">
+                <img src="images/giftimage.jpg" alt="Dried Mango"/>
+                <div class="product-info">
+                    <h3>Dried Mango</h3>
+                    <p>Sweet, tropical mango slices dried to perfection.</p>
+                    <div class="price">$9.99</div>
+                    
+                </div>
             </div>
-          </div>
-          <div class="product-card">
-            <img src="./images/gift.jpg" alt="Dried Mango" />
-            <div class="product-info">
-              <h3>Dried Mango</h3>
-              <p>Sweet, tropical mango slices dried to perfection.</p>
-              <div class="price">$9.99</div>
-              {/* <button class="add-to-cart">Add to Cart</button> */}
+            <div data-aos="flip-left" data-aos-delay="500" class="product-card">
+                <img src="images/giftimage.jpg" alt="Dried Cranberries"/>
+                <div class="product-info">
+                    <h3>Dried Cranberries</h3>
+                    <p>Tangy and sweet cranberries, perfect for snacking.</p>
+                    <div class="price">$7.99</div>
+                    
+                </div>
             </div>
-          </div>
-          <div class="product-card">
-            <img src="./images/gift.jpg" alt="Dried Mango" />
-            <div class="product-info">
-              <h3>Dried Mango</h3>
-              <p>Sweet, tropical mango slices dried to perfection.</p>
-              <div class="price">$9.99</div>
-              {/* <button class="add-to-cart">Add to Cart</button> */}
+            <div data-aos="flip-left" data-aos-delay="600" class="product-card">
+                <img src="images/giftimage.jpg" alt="Dried Apricots"/>
+                <div class="product-info">
+                    <h3>Dried Apricots</h3>
+                    <p>Soft and chewy apricots with rich flavor.</p>
+                    <div class="price">$8.99</div>
+                    
+                </div>
             </div>
-          </div>
-          <div class="product-card">
-            <img src="./images/gift.jpg" alt="Dried Mango" />
-            <div class="product-info">
-              <h3>Dried Mango</h3>
-              <p>Sweet, tropical mango slices dried to perfection.</p>
-              <div class="price">$9.99</div>
-              {/* <button class="add-to-cart">Add to Cart</button> */}
+            <div data-aos="flip-left" data-aos-delay="700"  class="product-card">
+                <img src="images/giftimage.jpg" alt="Mixed Berries"/>
+                <div class="product-info">
+                    <h3>Mixed Berries</h3>
+                    <p>A delicious blend of strawberries, blueberries, and cherries.</p>
+                    <div class="price">$10.99</div>
+                    
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
       <section class="features">
         <h2>Why Choose Our Dried Fruits?</h2>

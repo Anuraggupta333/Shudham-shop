@@ -1,5 +1,7 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=National+Park:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Reset & Box Model Setup */
 * {
   padding: 0;
   margin: 0;
@@ -11,36 +13,31 @@ li {
 }
 
 html {
-  /* font-size: 62.5%; */
+  scroll-behavior: smooth !important;
 }
 
 
+
+/* Navbar Styles */
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
-
 }
 
 #navbar {
-  /* background-color: red; */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   background-color: rgba(245, 245, 245, 0.804);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   height: 100px;
   width: 85%;
   margin: 20px auto;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 5px 50px;
   border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
 
   & #nav_img {
     height: 100%;
@@ -49,7 +46,6 @@ nav {
     width: 100px;
 
     & img {
-
       height: 140%;
       width: 120%;
     }
@@ -60,7 +56,6 @@ nav {
 
     ul {
       display: flex;
-      flex-direction: row;
       align-items: center;
       justify-content: space-between;
       height: 100%;
@@ -69,55 +64,59 @@ nav {
       font-weight: 600;
 
       & li {
-        /* background-color: pink; */
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-
       }
     }
   }
 }
 
+/* Dropdown Hover Styling */
 .hover_style {
   background-color: rgb(254, 255, 254);
   position: absolute;
   left: 0;
   top: 80px;
   z-index: 2;
-  height: fit-content !important;
   width: 10rem !important;
+  padding: 0.5rem 1rem;
   display: none !important;
-  padding: 1rem 2rem;
+  height: fit-content !important;
 
   & li {
-    list-style: none;
     padding: 1rem 0;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: black;
+    
   }
 }
 
+.hover_style li:first-child{
+  border-bottom: 1px solid #000000;
+}
 .li_hover {
   position: relative;
-  /* background-color: red; */
-
 }
 
 .li_hover:hover .hover_style {
   display: block !important;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  & a{
+    text-decoration: none !important;
+    color: black !important;
+
+    &:hover{
+      color: #e98a15 !important;
+    }
+  }
 }
 
+/* Hero Section */
 #hero_section {
-  /* background-color: aquamarine; */
   background-image: url("../images/Home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -130,12 +129,10 @@ nav {
   & #hero {
     color: #f3f4f1;
     text-transform: capitalize;
-    display: inline-block;
 
     & h1 {
       font-family: "Inter", sans-serif;
       text-shadow: 0 1px 0 rgb(0, 0, 0);
-      /* font-size: 60px; */
       font-weight: 600;
       text-align: center;
     }
@@ -143,8 +140,6 @@ nav {
     & p {
       font-size: 2.5vw;
       text-align: center;
-      /* font-weight: 500; */
-      /* width: fit-content; */
       font-weight: 500;
     }
   }
@@ -160,7 +155,7 @@ nav {
   width: 0;
 }
 
-/* Animations */
+/* Typing Keyframes */
 @keyframes typing {
   from {
     width: 0;
@@ -171,6 +166,7 @@ nav {
   }
 }
 
+/* Blinking Cursor Animation */
 @keyframes blinking {
   0% {
     border-color: transparent;
@@ -185,14 +181,11 @@ nav {
   }
 }
 
-
-
+/* Features Section */
 .features {
   background-color: #fcf9f2;
   padding: 4rem 2rem;
-  height: auto;
   text-align: center;
-
 }
 
 .features h2 {
@@ -206,7 +199,6 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  /* height: 50vh; */
 }
 
 .feature-card {
@@ -219,12 +211,10 @@ nav {
 }
 
 .feature-card img {
-  /* background-color: rgb(194, 10, 10); */
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  /* border: 1px solid rgba(128, 128, 128, 0.573); */
   margin-bottom: 1rem;
 }
 
@@ -233,12 +223,10 @@ nav {
   margin-bottom: 1rem;
 }
 
-
+/* Products Section */
 .products {
   background-color: #f0e6d9;
   padding: 4rem 2rem;
-  /* display: flex; */
-
 }
 
 .products h2 {
@@ -309,7 +297,7 @@ nav {
   background-color: #7a5230;
 }
 
-
+/* Testimonials Section */
 .testimonials {
   padding: 4rem 2rem;
   text-align: center;
@@ -326,7 +314,6 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 2rem 0;
 }
@@ -350,24 +337,14 @@ nav {
   color: #5a3921;
 }
 
-
-
+/* Responsive Design Breakpoints */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
   }
 
-  /* nav {
-      flex-direction: column;
-      gap: 0.5rem;
-  } */
-
   .feature-cards,
-  .testimonial-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  .testimonial-cards,
   .newsletter-form {
     flex-direction: column;
     align-items: center;
@@ -378,25 +355,28 @@ nav {
   }
 }
 
+#gift-products {
+  border-top: 2px solid #000000;
+}
+
+/* Hamburger Visibility Toggle */
 #ham {
   display: none;
 }
 
-@media screen and ((max-width: 1025px)) {
-
+/* Tablet Responsiveness */
+@media screen and (max-width: 1025px) {
   #navbar {
     padding: 3px 20px;
-    /* background-color: red; */
   }
 
   #hero_section {
     height: 500px;
   }
-
 }
 
-@media screen and ((max-width: 760px)) {
-
+/* Mobile Responsiveness */
+@media screen and (max-width: 760px) {
   #nav_links {
     display: none;
   }
@@ -406,7 +386,6 @@ nav {
   }
 
   .feature-card {
-
     width: 300px;
     height: fit-content;
     padding: 1rem 1.1rem;
@@ -417,34 +396,30 @@ nav {
     height: 50px;
   }
 
-  
-.product-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  & img {
-    /* align-items: center; */
-    width: 50%;
-    height: 100px;
-    object-fit: cover;
-    padding-left: 5px;
+  .product-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      width: 50%;
+      height: 100px;
+      object-fit: cover;
+      padding-left: 5px;
+    }
   }
 }
-}
 
-@media screen and ((max-width: 376px)) {
-
+/* Small Devices: e.g. iPhone SE */
+@media screen and (max-width: 376px) {
   #navbar {
     padding: 3px 20px;
-    /* background-color: red; */
   }
-
 }
 
-@media screen and ((max-width: 320px)) {
-
+/* Very Small Devices */
+@media screen and (max-width: 320px) {
   .feature-card {
     width: 257px;
   }
-
 }
