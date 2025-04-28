@@ -117,15 +117,16 @@ function App() {
                 </ul>
               </li>
               <li>
-                <a href=""> Products </a>
+                <a href="#products"> Products </a>
+              </li>
+            
+              <li>
+                {" "}
+                <a href="#testimonials"> Reviews </a>
               </li>
               <li>
                 {" "}
-                <a href=""> About Us </a>
-              </li>
-              <li>
-                {" "}
-                <a href=""> Contact </a>
+                <a href="#footer-section"> About Us </a>
               </li>
             </ul>
           </div>
