@@ -84,11 +84,10 @@ function App() {
                   <a href="#products"> Products </a>
                 </li>
                 <li>
-                  {" "}
-                  <a href="#footer-section"> About Us </a>
+                  <a href="#testimonials"> Reviews </a>
                 </li>
                 <li>
-                  <a href="#footer-section"> Contact </a>
+                  <a href="#footer-section"> About Us </a>
                 </li>
               </ul>
             </div>
