@@ -311,7 +311,7 @@ function App() {
             </p>
           </div>
           <div class="feature-card">
-            <img src="./images/sustainable.png" alt="Sustainable" />
+            <img src="./images/sustainable.jpg" alt="Sustainable" />
             <h3>Sustainably Sourced</h3>
             <p>
               Ethically sourced from local farmers who follow sustainable and
