@@ -17,6 +17,8 @@ import { IoLogoInstagram } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { FaArrowUp } from "react-icons/fa";
+
 
 function App() {
   const [isOpen, setOpen] = useState(true);
@@ -570,6 +572,10 @@ function App() {
         </div>
         <div class="copyright">&copy; 2025 Shudhham. All rights reserved.</div>
       </footer>
+
+      <a id="top_arrow" href="#hero_section"><div id="topscroll">
+      <FaArrowUp size={24}/>
+    </div></a>
     </>
   );
 }
