@@ -19,7 +19,6 @@ import { FaTwitter } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaArrowUp } from "react-icons/fa";
 
-
 function App() {
   const [isOpen, setOpen] = useState(true);
   const [isOpencat, setOpenCat] = useState(true);
@@ -121,7 +120,7 @@ function App() {
               <li>
                 <a href="#products"> Products </a>
               </li>
-            
+
               <li>
                 {" "}
                 <a href="#testimonials"> Reviews </a>
@@ -136,13 +135,29 @@ function App() {
       </nav>
 
       <section id="hero_section">
-        <div id="hero">
+        {/* <div id="hero">
           <h1 class="cursor typewriter-animation">
             Enrich with goodness and purity .
           </h1>
-          <p>- Tanish Enterprise</p>
+          <p>- Tanish Enterprises</p>
+        </div> */}
+        {/* <div id="producttest">
+          <div>
+            <p>🎉 Enrich with Goodness and Purity - Tanish Enterprises | 💥 Flat 10% OFF on All Dry Fruits | 🌟 100% Natural & Handpicked | 💯 Quality You Can Trust | 🚚 Free Delivery on Orders Above ₹499 | 📞 Call Us for Bulk Orders! </p> 
+          </div>
+        </div> */}
+        <div class="marquee">
+          <div class="marquee-content">
+            <span>
+              🎉 Enrich with Goodness and Purity - Tanish Enterprises |
+            </span>
+            <span>💥 Flat 10% OFF on All Dry Fruits |</span>
+            <span>🌟 100% Natural & Handpicked |</span>
+            <span>💯 Quality You Can Trust |</span>
+            <span>🚚 Free Delivery on Orders Above ₹499 |</span>
+            <span>📞 Call Us for Bulk Orders!</span>
+          </div>
         </div>
-        {/* <div id="producttest"></div> */}
       </section>
 
       {/* products */}
@@ -540,27 +555,41 @@ function App() {
           </div>
           <div class="footer-section">
             <h3>Contact Us</h3>
-            <p>Email: jaintanish@gmail.com</p>
+            <p>
+              Email:{" "}
+              <a href="mailto:Jaintanish425@gmail.com">
+                Jaintanish425@gmail.com
+              </a>
+            </p>
             <p>
               Phone:<a href="tel:+918871452513"> +91-8871452513</a>
             </p>
             <p>
-             <a href="https://www.google.co.in/maps/dir//Shudhham+by+TANISH+ENTERPRISES,+Building,+15,+MR+1,+near+medihub+clinic,+Mahalaxmi+Nagar,+Indore,+Madhya+Pradesh+452010/@22.7544968,75.9094014,17z/data=!4m17!1m7!3m6!1s0x3962e34683f4d993:0xaa8d0b229d2271d0!2sShudhham+by+TANISH+ENTERPRISES!8m2!3d22.7544968!4d75.9119763!16s%2Fg%2F11y9b5zv2f!4m8!1m0!1m5!1m1!1s0x3962e34683f4d993:0xaa8d0b229d2271d0!2m2!1d75.9119941!2d22.7544948!3e3?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D">
-             Building, 15, MR 1, near medihub clinic, Mahalaxmi Nagar, Indore,
-             Madhya Pradesh 452010
-             </a>
+              <a href="https://www.google.co.in/maps/dir//Shudhham+by+TANISH+ENTERPRISES,+Building,+15,+MR+1,+near+medihub+clinic,+Mahalaxmi+Nagar,+Indore,+Madhya+Pradesh+452010/@22.7544968,75.9094014,17z/data=!4m17!1m7!3m6!1s0x3962e34683f4d993:0xaa8d0b229d2271d0!2sShudhham+by+TANISH+ENTERPRISES!8m2!3d22.7544968!4d75.9119763!16s%2Fg%2F11y9b5zv2f!4m8!1m0!1m5!1m1!1s0x3962e34683f4d993:0xaa8d0b229d2271d0!2m2!1d75.9119941!2d22.7544948!3e3?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D">
+                Building, 15, MR 1, near medihub clinic, Mahalaxmi Nagar,
+                Indore, Madhya Pradesh 452010
+              </a>
             </p>
           </div>
         </div>
 
         <div class="social-links">
-          <a href="https://www.instagram.com/shudhham_?igsh=MXJ4cWt2bGllYXJx" id="link_icon1">
+          <a
+            href="https://www.instagram.com/shudhham_?igsh=MXJ4cWt2bGllYXJx"
+            id="link_icon1"
+          >
             <FaFacebook size={28} />
           </a>
-          <a href="https://www.instagram.com/shudhham_?igsh=MXJ4cWt2bGllYXJx" id="link_icon2">
+          <a
+            href="https://www.instagram.com/shudhham_?igsh=MXJ4cWt2bGllYXJx"
+            id="link_icon2"
+          >
             <IoLogoInstagram size={24} />
           </a>
-          <a href="https://www.instagram.com/shudhham_?igsh=MXJ4cWt2bGllYXJx" id="link_icon3">
+          <a
+            href="https://www.instagram.com/shudhham_?igsh=MXJ4cWt2bGllYXJx"
+            id="link_icon3"
+          >
             <FaTwitter size={24} />
           </a>
           <a
@@ -573,9 +602,11 @@ function App() {
         <div class="copyright">&copy; 2025 Shudhham. All rights reserved.</div>
       </footer>
 
-      <a id="top_arrow" href="#hero_section"><div id="topscroll">
-      <FaArrowUp size={24}/>
-    </div></a>
+      <a id="top_arrow" href="#hero_section">
+        <div id="topscroll">
+          <FaArrowUp size={24} />
+        </div>
+      </a>
     </>
   );
 }
